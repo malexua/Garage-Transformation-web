@@ -13,11 +13,11 @@ export function JsonLd() {
     areaServed: site.serviceArea,
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Phoenix",
-      addressRegion: "AZ",
+      addressLocality: "Ontario",
+      addressRegion: "CA",
       addressCountry: "US",
     },
-    openingHours: "Mo-Sa 07:00-18:00",
+    openingHours: "Sun-Fri",
     priceRange: "$$–$$$",
   };
 
