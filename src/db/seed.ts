@@ -108,8 +108,8 @@ export async function ensureSeeded() {
         "The Blackline signature package: epoxy, custom walls, slatwall, and LED — sequenced so you get a finished room, not four separate invoices.",
       details:
         "This is the job we built the studio for. We measure, pull a design board (floor blend, wall color, border, slatwall finish, lighting runs), then run a four-to-six-day sequence: empty and grind, coat, cure, paint, hang, light, walkthrough.\n\nYou get one project lead, one schedule, and a garage that photographs like a product shot. Most 2-car bays land between $8,500 and $16,000 depending on flake vs metallic, how much wall we treat, and how aggressive the storage is. We will tell you the number before we grind a single inch.",
-      priceFrom: "From $8,500 / 2-car",
-      duration: "4–6 days on site",
+      priceFrom: "From $1500 / 2-car",
+      duration: "3-5 days on site",
       image: "/gallery/midnight-bay-after.jpg",
       features: JSON.stringify([
         "Single design board for floor, wall, storage, light",
@@ -128,7 +128,7 @@ export async function ensureSeeded() {
       {
         slug: "midnight-bay",
         title: "Midnight Bay",
-        location: "North Scottsdale",
+        location: "Ontario, California",
         summary:
           "A 2-car bay recast as a night studio: ink walls, botanical frames, taupe slatwall, flake epoxy, and LED door halos.",
         description:
@@ -136,7 +136,7 @@ export async function ensureSeeded() {
         category: "Full transformation",
         squareFeet: 420,
         durationDays: 4,
-        completedOn: "March 2026",
+        completedOn: "October 2026",
         coverImage: "/gallery/midnight-bay-after.jpg",
         beforeImage: "/gallery/midnight-bay-during.jpg",
         afterImage: "/gallery/midnight-bay-after.jpg",
@@ -299,42 +299,16 @@ export async function ensureSeeded() {
 
   await db.insert(testimonials).values([
     {
-      name: "Elena V.",
-      neighborhood: "North Scottsdale",
+      name: "Getrude K.",
+      neighborhood: "",
       quote:
-        "We used to close the garage before anyone came over. Now it is the first door we open. The LEDs at night still surprise me.",
+        "We used to close the garage before anyone came over. Now it is the first door we open. The LEDs at night still surprise me. I loved it",
       rating: 5,
       projectSlug: "midnight-bay",
       featured: true,
     },
-    {
-      name: "James & Priya R.",
-      neighborhood: "Gilbert",
-      quote:
-        "They treated it like a kitchen remodel, not a coating job. The floor is the easy part — the walls and the storage are why it actually stays clean.",
-      rating: 5,
-      projectSlug: "family-command",
-      featured: true,
-    },
-    {
-      name: "Marcus T.",
-      neighborhood: "Paradise Valley",
-      quote:
-        "I wanted the car to look like it was sitting in a gallery. They nailed the floor. Reflections are ridiculous in the best way.",
-      rating: 5,
-      projectSlug: "collectors-bay",
-      featured: true,
-    },
-    {
-      name: "Dana S.",
-      neighborhood: "Chandler",
-      quote:
-        "On time, no tire marks after a week of 110° parking, and they masked the water heater like they were painting a piano.",
-      rating: 5,
-      projectSlug: null,
-      featured: true,
-    },
-  ]);
+  
+   
 
   await db.insert(faqs).values([
     {
@@ -356,7 +330,7 @@ export async function ensureSeeded() {
       sortOrder: 3,
     },
     {
-      question: "Will epoxy peel in Phoenix heat?",
+      question: "Will epoxy peel in heat?",
       answer:
         "Peel is almost always a prep problem, not a temperature problem. We diamond-grind to a real profile, degrease oil, and use systems rated for hot tires. The 5-year residential warranty covers delamination from workmanship. Direct west-facing slabs get an extra conversation about UV-stable topcoats.",
       sortOrder: 4,
@@ -389,35 +363,21 @@ export async function ensureSeeded() {
 
   await db.insert(inquiries).values([
     {
-      name: "Alicia Nguyen",
-      email: "alicia.n@example.com",
-      phone: "(480) 555-0148",
-      address: "8820 E. Palomino Rd",
-      city: "Scottsdale",
-      zip: "85255",
+      name: "Aloha Mahogany",
+      email: "aleget24@gmail.com",
+      phone: "951-267-1812",
+      address: "Mae Way",
+      city: "Ontario",
+      zip: "91762",
       garageType: "2-car",
       squareFeet: 420,
       services: JSON.stringify(["full"]),
       timeline: "In the next 2–4 weeks",
-      budgetRange: "$8,000 – $15,000",
+      budgetRange: "$1,500 – $15,000",
       message: "Want the Midnight Bay look — black walls, LEDs, flake floor. Water heater stays.",
       status: "new",
     },
-    {
-      name: "Chris Patel",
-      email: "cpatel@example.com",
-      phone: "(602) 555-0194",
-      address: "414 W. Maplewood",
-      city: "Gilbert",
-      zip: "85233",
-      garageType: "3-car",
-      squareFeet: 680,
-      services: JSON.stringify(["epoxy", "slatwall"]),
-      timeline: "In the next 1–3 months",
-      budgetRange: "$4,000 – $8,000",
-      message: "Kids' bikes and a freezer wall. Prefer a lighter floor.",
-      status: "contacted",
-    },
+   
   ]);
 
   seeded = true;
