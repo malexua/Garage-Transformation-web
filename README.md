@@ -1,6 +1,6 @@
-# Blackline Garage Co.
+# Mahogany Garage Tranformation Co.
 
-Marketing site + lead inbox for a garage transformation studio (epoxy floors, custom walls, slatwall, LED lighting). Built with Next.js (App Router), Tailwind CSS, Drizzle ORM, and PostgreSQL.
+Marketing site + lead inbox for a garage transformation studio (epoxy floors, custom walls, slatwall, LED lighting) . Built with Next.js (App Router), Tailwind CSS, Drizzle ORM, and PostgreSQL.
 
 ## Run locally
 
